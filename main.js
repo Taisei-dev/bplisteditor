@@ -3,7 +3,7 @@ var http = require('http');
 
 var file = new(static.Server)(__dirname);
 
-const PORT=8080;
+const PORT=process.env.PORT;
 const DEBUG=false;
 
 http.createServer(function (req, res) {
